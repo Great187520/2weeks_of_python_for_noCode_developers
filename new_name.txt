@@ -1,0 +1,11 @@
+python_work; inside python_work, you might have another folder called
+text_files to distinguish your program files from the text files they’re
+manipulating. Even though text_files is in python_work, just passing open()
+the name of a file in text_files won’t work, because Python will only look
+in python_work and stop there; it won’t go on and look in text_files. To get
+Python to open files from a directory other than the one where your program
+file is stored, you need to provide a file path, which tells Python to
+look in a specific location on your system.
+Because text_files is inside python_work, you could use a relative file path
+to open a file from text_files. A relative file path tells Python to look for a given
+location relative to the directory where the
